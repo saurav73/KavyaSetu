@@ -9,6 +9,9 @@ use Illuminate\Http\Request;
 
 class PoemController extends Controller
 {
+    /**
+     * Show the public feed of published poems, newest first.
+     */
     public function index()
     {
         $poems = Poem::latest()
@@ -19,6 +22,9 @@ class PoemController extends Controller
         return view('poems.index', compact('poems'));
     }
 
+    /**
+     * Show one poem. Drafts are hidden from everyone except the author.
+     */
     public function show(Poem $poem)
     {
         if (!$poem->is_published && $poem->user_id !== auth()->id()) {
@@ -29,11 +35,17 @@ class PoemController extends Controller
         return view('poems.show', compact('poem'));
     }
 
+    /**
+     * Show the form for writing a new poem.
+     */
     public function create()
     {
         return view('poems.create');
     }
 
+    /**
+     * Store a newly written poem for the logged-in user.
+     */
     public function store(PoemStoreRequest $request)
     {
         $poem = auth()->user()->poems()->create($request->validated());
@@ -43,12 +55,18 @@ class PoemController extends Controller
             ->with('success', 'Your poem has been published.');
     }
 
+    /**
+     * Show the edit form. Only the poem's author may open it.
+     */
     public function edit(Poem $poem)
     {
         $this->authorize('update', $poem);
         return view('poems.edit', compact('poem'));
     }
 
+    /**
+     * Update a poem. Only the poem's author may change it.
+     */
     public function update(PoemUpdateRequest $request, Poem $poem)
     {
         $this->authorize('update', $poem);
@@ -59,6 +77,9 @@ class PoemController extends Controller
             ->with('success', 'Poem updated.');
     }
 
+    /**
+     * Delete a poem. Only the poem's author may delete it.
+     */
     public function destroy(Poem $poem)
     {
         $this->authorize('delete', $poem);
@@ -67,6 +88,9 @@ class PoemController extends Controller
         return redirect()->route('poems.my')->with('success', 'Poem deleted.');
     }
 
+    /**
+     * Show the logged-in user's own poems, including drafts.
+     */
     public function myPoems()
     {
         $poems = auth()->user()->poems()->latest()->simplePaginate(10);
