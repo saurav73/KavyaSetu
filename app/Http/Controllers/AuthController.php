@@ -36,7 +36,7 @@ class AuthController extends Controller
 
         Auth::login($user);
 
-        return redirect()->route('poems.index')->with('success', 'Registration successful! Welcome to Poetry Haven.');
+        return redirect()->route('poems.index')->with('success', 'Registration successful! Welcome to KavyaSetu.');
     }
 
     /**
