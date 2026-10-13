@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@yield('title', 'Poetry Haven')</title>
+    <title>@yield('title', 'KavyaSetu')</title>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -22,7 +22,7 @@
                 <!-- Logo -->
                 <a href="{{ route('home') }}"
                    class="text-2xl font-[Playfair_Display] font-bold text-indigo-700 hover:text-indigo-800 transition">
-                    Poetry Haven
+                    KavyaSetu
                 </a>
 
                 <!-- Desktop Nav -->
@@ -141,7 +141,7 @@
     <footer class="bg-gray-900 text-gray-400 py-10 mt-auto">
         <div class="max-w-7xl mx-auto px-4 text-center">
             <p class="text-sm">
-                © {{ date('Y') }} Poetry Haven. Crafted with passion for poets.
+                © {{ date('Y') }} KavyaSetu. Crafted with passion for poets.
             </p>
             <p class="text-xs mt-2 opacity-60">
                 Where words become timeless.

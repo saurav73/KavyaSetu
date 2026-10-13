@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Welcome to Poetry Haven')
+@section('title', 'Welcome to KavyaSetu')
 
 @section('content')
 
