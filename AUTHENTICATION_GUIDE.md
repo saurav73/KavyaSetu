@@ -30,6 +30,9 @@ How user authentication works in the KavyaSetu poem sharing app.
 - Writing, editing, and deleting poems requires an account.
 - Drafts (`is_published = false`) return 404 for everyone except the author.
 - Edit/delete additionally go through the poem policy: only the author passes.
+- The login form has a "Remember me" checkbox; checked logins persist across
+  browser restarts via Laravel's remember-me cookie.
+- Login regenerates the session ID, logout invalidates the session and its CSRF token.
 
 ## Trying it locally
 
