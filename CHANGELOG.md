@@ -1,5 +1,9 @@
 # KavyaSetu Changelog
 
+## 2026-10-15
+- Removed dead commented-out like/comment relationship stubs from `Poem` and `User` models
+- Added docblock to `Poem::booted()` describing the auto slug generation hooks
+
 ## 2026-10-13
 - Fixed `.env.example` leftovers from the original Todo-app template (`APP_NAME`, `DB_DATABASE`)
 - Removed orphaned `TaskController` (unrouted, referenced the nonexistent `Task` model)
