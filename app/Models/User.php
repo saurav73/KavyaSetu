@@ -57,16 +57,4 @@ class User extends Authenticatable
     {
         return $this->hasMany(Poem::class);
     }
-
-    // Optional: if you add likes later
-    // public function likes()
-    // {
-    //     return $this->hasMany(Like::class);
-    // }
-
-    // Optional: if you add comments later
-    // public function comments()
-    // {
-    //     return $this->hasMany(Comment::class);
-    // }
 }
