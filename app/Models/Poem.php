@@ -40,6 +40,10 @@ class Poem extends Model
     //  Boot / Lifecycle Hooks
     // ────────────────────────────────────────────────
 
+    /**
+     * Register lifecycle hooks: auto-generate a unique slug on create,
+     * and regenerate it on update when the title changes.
+     */
     protected static function booted(): void
     {
         static::creating(function (Poem $poem) {
