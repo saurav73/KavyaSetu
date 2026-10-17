@@ -33,6 +33,9 @@ Open `http://127.0.0.1:8000`, register an account, and publish your first poem.
 |---|---|
 | `app/Http/Controllers/PoemController.php` | Poem CRUD, publishing, ownership checks |
 | `app/Http/Controllers/AuthController.php` | Register / login / logout |
+| `app/Http/Controllers/Controller.php` | Base controller composing Laravel helper traits |
+| `app/Http/Requests/` | PoemStoreRequest / PoemUpdateRequest input validation |
+| `app/Policies/PoemPolicy.php` | Author-only edit/delete ownership rules |
 | `app/Models/Poem.php` | Poem model — slugs, publishing, soft deletes |
 | `routes/web.php` | Public poem feed + guest/auth route groups |
 | `AUTHENTICATION_GUIDE.md` | How authentication works in this app |
