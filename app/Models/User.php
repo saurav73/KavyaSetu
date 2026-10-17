@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
+/**
+ * An application user. Owns poems via a hasMany relationship.
+ */
 class User extends Authenticatable
 {
     use HasFactory, Notifiable;

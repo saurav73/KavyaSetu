@@ -8,6 +8,10 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Str;
 
+/**
+ * A user-written poem with an auto-generated slug, publish/draft state,
+ * and soft deletes. Belongs to the user who wrote it.
+ */
 class Poem extends Model
 {
     use HasFactory, SoftDeletes;
