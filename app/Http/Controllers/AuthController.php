@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
+/**
+ * Handles user registration, login with remember-me support,
+ * and logout with full session invalidation.
+ */
 class AuthController extends Controller
 {
     /**

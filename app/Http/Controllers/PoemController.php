@@ -7,6 +7,10 @@ use App\Http\Requests\PoemUpdateRequest;
 use App\Models\Poem;
 use Illuminate\Http\Request;
 
+/**
+ * Handles the poem lifecycle: the public poem feed, detail pages,
+ * and author-scoped create, edit, and delete actions.
+ */
 class PoemController extends Controller
 {
     /**
