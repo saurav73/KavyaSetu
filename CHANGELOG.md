@@ -1,5 +1,12 @@
 # KavyaSetu Changelog
 
+## 2026-10-17
+- Added class-level PHPDoc blocks to `Controller`, `PoemController`, and `AuthController`
+- Added class-level PHPDoc blocks to `PoemStoreRequest` and `PoemUpdateRequest` (notes that `authorize()` returns true because auth is enforced by route middleware and ownership by `PoemPolicy`)
+- Added class-level PHPDoc blocks to the `Poem` and `User` models
+- Removed spurious `user_id` from `User` fillable (the users table has no such column; `user_id` lives on the poems table)
+- Extended the README project-structure table with `Controller.php`, `app/Http/Requests/`, and `app/Policies/PoemPolicy.php`
+
 ## 2026-10-15
 - Removed dead commented-out like/comment relationship stubs from `Poem` and `User` models
 - Added docblock to `Poem::booted()` describing the auto slug generation hooks
