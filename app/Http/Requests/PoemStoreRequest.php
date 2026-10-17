@@ -4,6 +4,12 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
+/**
+ * Validates poem input for the create action.
+ *
+ * authorize() returns true because authentication is enforced by route
+ * middleware and ownership checks by PoemPolicy, not by this request.
+ */
 class PoemStoreRequest extends FormRequest
 {
     /**
