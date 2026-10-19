@@ -1,5 +1,9 @@
 # KavyaSetu Changelog
 
+## 2026-10-19
+- README setup now notes that the `kavyasetu` MySQL database must exist before `php artisan migrate` runs
+- Added a file-level docblock to `routes/web.php` describing the three route groups and why the authenticated routes must be registered before the public generic ones
+
 ## 2026-10-17
 - Added class-level PHPDoc blocks to `Controller`, `PoemController`, and `AuthController`
 - Added class-level PHPDoc blocks to `PoemStoreRequest` and `PoemUpdateRequest` (notes that `authorize()` returns true because auth is enforced by route middleware and ownership by `PoemPolicy`)
