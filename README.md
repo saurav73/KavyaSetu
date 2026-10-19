@@ -21,6 +21,9 @@ Laravel, Eloquent ORM, Blade views, Form Requests for validation, Policies for a
 composer install
 cp .env.example .env
 php artisan key:generate
+# The default .env points at MySQL — create the `kavyasetu` database first
+# (skip this step if you switch DB_CONNECTION to sqlite):
+#   mysql -u root -p -e "CREATE DATABASE kavyasetu;"
 php artisan migrate
 composer run dev        # or: php artisan serve
 ```
