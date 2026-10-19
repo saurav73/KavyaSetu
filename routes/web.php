@@ -1,5 +1,18 @@
 <?php
 
+/**
+ * Web route map for KavyaSetu.
+ *
+ * Three groups, order matters:
+ *  1. Guest-only auth routes (`guest` middleware) — logged-in users are
+ *     redirected away from /register and /login.
+ *  2. Authenticated routes (`auth` middleware) — poem management and the
+ *     /my-poems dashboard. These must be registered BEFORE the public poem
+ *     routes below, otherwise generic routes like /poems/{poem:slug} would
+ *     swallow specific ones like /poems/create.
+ *  3. Public poem routes — the feed and published-poem pages.
+ */
+
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PoemController;
 use Illuminate\Support\Facades\Route;
