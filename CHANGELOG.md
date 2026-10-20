@@ -1,5 +1,8 @@
 # KavyaSetu Changelog
 
+## 2026-10-20
+- Fixed misleading create-flow copy: the create form's "Publish Poem" button and the "has been published" flash message implied new poems go live, but `PoemController@store` saves drafts (`is_published` defaults to false; publishing happens via the edit-form checkbox) — button now reads "Save Poem", flash says "saved as a draft"
+
 ## 2026-10-19
 - README setup now notes that the `kavyasetu` MySQL database must exist before `php artisan migrate` runs
 - Added a file-level docblock to `routes/web.php` describing the three route groups and why the authenticated routes must be registered before the public generic ones
