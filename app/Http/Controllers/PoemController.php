@@ -56,7 +56,7 @@ class PoemController extends Controller
 
         return redirect()
             ->route('poems.show', $poem->slug)
-            ->with('success', 'Your poem has been published.');
+            ->with('success', 'Your poem has been saved as a draft.');
     }
 
     /**

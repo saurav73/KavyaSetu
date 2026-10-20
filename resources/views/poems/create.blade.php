@@ -49,7 +49,7 @@
             <button 
                 type="submit" 
                 class="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition font-medium">
-                Publish Poem
+                Save Poem
             </button>
             <a 
                 href="{{ route('poems.index') }}" 
