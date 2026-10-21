@@ -19,7 +19,7 @@ How user authentication works in the KavyaSetu poem sharing app.
 |---|---|---|
 | POST | `/logout` | Sign out |
 | GET | `/poems/create` | New poem form |
-| POST | `/poems` | Publish a poem |
+| POST | `/poems` | Save a new poem as a draft (visible only to its author) |
 | GET | `/poems/{slug}/edit` | Edit form (author only) |
 | PUT | `/poems/{slug}` | Update (author only) |
 | DELETE | `/poems/{slug}` | Delete (author only) |
@@ -38,5 +38,5 @@ How user authentication works in the KavyaSetu poem sharing app.
 
 1. `php artisan serve` and open `http://127.0.0.1:8000`
 2. Go to `/register`, create an account (name, email, password min 8 chars)
-3. Open `/poems/create`, write a poem, publish it
+3. Open `/poems/create`, write a poem — it saves as a draft, visible only to you
 4. Log out — your published poem is still on the public feed; drafts are hidden
