@@ -21,7 +21,7 @@ How user authentication works in the KavyaSetu poem sharing app.
 | GET | `/poems/create` | New poem form |
 | POST | `/poems` | Save a new poem as a draft (visible only to its author) |
 | GET | `/poems/{slug}/edit` | Edit form (author only) |
-| PUT | `/poems/{slug}` | Update (author only) |
+| PUT | `/poems/{slug}` | Update (author only), incl. publish/unpublish via the form's "Publish" checkbox |
 | DELETE | `/poems/{slug}` | Delete (author only) |
 
 ## Rules
