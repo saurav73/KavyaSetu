@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Http\Requests\PoemStoreRequest;
 use App\Http\Requests\PoemUpdateRequest;
 use App\Models\Poem;
-use Illuminate\Http\Request;
 
 /**
  * Handles the poem lifecycle: the public poem feed, detail pages,
