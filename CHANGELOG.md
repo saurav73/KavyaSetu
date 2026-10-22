@@ -1,5 +1,8 @@
 # KavyaSetu Changelog
 
+## 2026-10-22
+- Removed the unused `Illuminate\Http\Request` import from `PoemController` (no method type-hints it; form requests carry the validation) — small hygiene fix
+
 ## 2026-10-21
 - Fixed stale wording in `AUTHENTICATION_GUIDE.md`: the `POST /poems` row and the local-try steps said the create flow "publishes" a poem, but `PoemController@store` saves drafts — both now say the poem is saved as a draft; the `PUT /poems/{slug}` row notes the form's Publish checkbox as the real publish path
 - Added the missing class-level docblock on `AppServiceProvider`, completing the class-docblock pass across models, controllers, form requests, and the poem policy
