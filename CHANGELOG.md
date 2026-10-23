@@ -1,5 +1,9 @@
 # KavyaSetu Changelog
 
+## 2026-10-23
+- Re-verified `AUTHENTICATION_GUIDE.md` against `routes/web.php`: all 15 routes (guest auth, poem CRUD, publish flow, `/my-poems`) documented accurately; `.env.example` MySQL defaults match the README setup guide — no doc changes needed
+
+
 ## 2026-10-22
 - Removed the unused `Illuminate\Http\Request` import from `PoemController` (no method type-hints it; form requests carry the validation) — small hygiene fix
 
