@@ -1,5 +1,8 @@
 # KavyaSetu Changelog
 
+## 2026-10-24
+- Re-verified README feature claims against `PoemController`: public feed is `simplePaginate(12)` as documented, draft visibility returns 404 for non-authors, publish/unpublish flows through `PoemUpdateRequest`'s `is_published` boolean; `AUTHENTICATION_GUIDE.md` route tables still match `routes/web.php` — no changes needed
+
 ## 2026-10-23
 - Re-verified `AUTHENTICATION_GUIDE.md` against `routes/web.php`: all 15 routes (guest auth, poem CRUD, publish flow, `/my-poems`) documented accurately; `.env.example` MySQL defaults match the README setup guide — no doc changes needed
 
