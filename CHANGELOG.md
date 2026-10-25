@@ -1,5 +1,9 @@
 # KavyaSetu Changelog
 
+## 2026-10-25
+- README: documented that My Poems paginates 10 per page (`PoemController::myPoems` uses `simplePaginate(10)`), distinct from the public feed's 12
+- Re-verified the authentication guide's claims against `AuthController`: remember-me is passed to `Auth::attempt`, login regenerates the session, logout invalidates it and regenerates the CSRF token — docs accurate
+
 ## 2026-10-24
 - Re-verified README feature claims against `PoemController`: public feed is `simplePaginate(12)` as documented, draft visibility returns 404 for non-authors, publish/unpublish flows through `PoemUpdateRequest`'s `is_published` boolean; `AUTHENTICATION_GUIDE.md` route tables still match `routes/web.php` — no changes needed
 
