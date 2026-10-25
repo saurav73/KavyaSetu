@@ -9,7 +9,7 @@ A poem sharing web app built with **Laravel (PHP)**. Poets can publish poems, ke
 - **Ownership policies** — only the author can edit or delete a poem
 - **Auth** — register, login, logout; poem management routes are behind `auth` middleware
 - **Public feed** — latest published poems, 12 per page
-- **My poems** — a personal dashboard of everything you've written
+- **My poems** — a personal dashboard of everything you've written (10 per page, vs 12 on the public feed)
 
 ## Tech
 
