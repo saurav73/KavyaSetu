@@ -1,5 +1,9 @@
 # KavyaSetu Changelog
 
+## 2026-10-26
+- README: pinned the framework to Laravel 12, matching `laravel/framework: ^12.0` in `composer.json`
+- Re-verified the setup guide against `.env.example`: `DB_CONNECTION=mysql` and `DB_DATABASE=kavyasetu` match the documented MySQL defaults
+
 ## 2026-10-25
 - README: documented that My Poems paginates 10 per page (`PoemController::myPoems` uses `simplePaginate(10)`), distinct from the public feed's 12
 - Re-verified the authentication guide's claims against `AuthController`: remember-me is passed to `Auth::attempt`, login regenerates the session, logout invalidates it and regenerates the CSRF token — docs accurate
