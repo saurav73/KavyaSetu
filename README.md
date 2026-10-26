@@ -1,6 +1,6 @@
 # KavyaSetu — a bridge connecting poets and poems
 
-A poem sharing web app built with **Laravel (PHP)**. Poets can publish poems, keep drafts private, and browse a public feed of published work.
+A poem sharing web app built with **Laravel 12 (PHP)**. Poets can publish poems, keep drafts private, and browse a public feed of published work.
 
 ## Features
 
