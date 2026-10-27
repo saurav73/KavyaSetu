@@ -1,5 +1,8 @@
 # KavyaSetu Changelog
 
+## 2026-10-27
+- README: pinned PHP to 8.2 (composer.json requires ^8.2) and documented the test suite honestly - currently only the Laravel scaffold ExampleTests, no app-specific tests yet
+
 ## 2026-10-26
 - README: pinned the framework to Laravel 12, matching `laravel/framework: ^12.0` in `composer.json`
 - Re-verified the setup guide against `.env.example`: `DB_CONNECTION=mysql` and `DB_DATABASE=kavyasetu` match the documented MySQL defaults
