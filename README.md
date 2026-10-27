@@ -30,6 +30,15 @@ composer run dev        # or: php artisan serve
 
 Open `http://127.0.0.1:8000`, register an account, and publish your first poem.
 
+## Tests
+
+```bash
+php artisan test
+```
+
+The suite is currently only the Laravel scaffold `ExampleTest`s (one Feature,
+one Unit); there are no app-specific tests yet.
+
 ## Project structure
 
 | Path | What it is |
