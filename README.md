@@ -37,7 +37,7 @@ php artisan test
 ```
 
 The suite is currently only the Laravel scaffold `ExampleTest`s (one Feature,
-one Unit); there are no app-specific tests yet.
+one Unit); there are no app-specific tests yet. Tests run on PHPUnit 11.
 
 ## Project structure
 
