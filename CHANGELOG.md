@@ -1,5 +1,10 @@
 # KavyaSetu Changelog
 
+
+## 2026-10-28
+- README: noted the test runner - the scaffold ExampleTests run on PHPUnit 11 (composer.json requires ^11.5.3)
+- Re-verified pagination and slugs: public feed `simplePaginate(12)`, My Poems `simplePaginate(10)`, slugs auto-generated from titles
+
 ## 2026-10-27
 - README: pinned PHP to 8.2 (composer.json requires ^8.2) and documented the test suite honestly - currently only the Laravel scaffold ExampleTests, no app-specific tests yet
 
