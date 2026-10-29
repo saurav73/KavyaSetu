@@ -5,6 +5,7 @@ A poem sharing web app built with **Laravel 12 (PHP 8.2)**. Poets can publish po
 ## Features
 
 - **Publish poems** — title + body, with clean slug-based URLs (`/poems/{slug}`)
+- **Slugs follow titles** — editing a poem's title regenerates its slug (unless the slug was changed manually), so the URL changes with the title
 - **Drafts stay private** — unpublished poems are visible only to their author (404 for everyone else)
 - **Ownership policies** — only the author can edit or delete a poem
 - **Auth** — register, login, logout; poem management routes are behind `auth` middleware
