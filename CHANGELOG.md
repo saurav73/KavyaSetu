@@ -1,6 +1,10 @@
 # KavyaSetu Changelog
 
 
+## 2026-10-29
+- README: documented slug regeneration - editing a poem's title regenerates its slug unless the slug was changed manually (Poem model updating hook)
+- Re-verified pagination and slugs: public feed `simplePaginate(12)`, My Poems `simplePaginate(10)`, SoftDeletes trait on the Poem model
+
 ## 2026-10-28
 - README: noted the test runner - the scaffold ExampleTests run on PHPUnit 11 (composer.json requires ^11.5.3)
 - Re-verified pagination and slugs: public feed `simplePaginate(12)`, My Poems `simplePaginate(10)`, slugs auto-generated from titles
