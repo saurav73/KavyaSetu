@@ -9,8 +9,8 @@ A poem sharing web app built with **Laravel 12 (PHP 8.2)**. Poets can publish po
 - **Drafts stay private** — unpublished poems are visible only to their author (404 for everyone else)
 - **Ownership policies** — only the author can edit or delete a poem
 - **Auth** — register, login, logout; poem management routes are behind `auth` middleware
-- **Public feed** — latest published poems, 12 per page
-- **My poems** — a personal dashboard of everything you've written (10 per page, vs 12 on the public feed)
+- **Public feed** — latest published poems, 12 per page, simple pagination (prev/next links, no numbered pages)
+- **My poems** — a personal dashboard of everything you've written (10 per page, vs 12 on the public feed), also simple pagination
 
 ## Tech
 
