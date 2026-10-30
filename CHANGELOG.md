@@ -1,6 +1,10 @@
 # KavyaSetu Changelog
 
 
+## 2026-10-30
+- README: feed bullets now note both lists use simple pagination (simplePaginate(12) public, simplePaginate(10) personal), so readers know there are no numbered page links
+- Re-verified: PoemController still hides drafts from non-authors with a 404, and only the author can edit or delete
+
 ## 2026-10-29
 - README: documented slug regeneration - editing a poem's title regenerates its slug unless the slug was changed manually (Poem model updating hook)
 - Re-verified pagination and slugs: public feed `simplePaginate(12)`, My Poems `simplePaginate(10)`, SoftDeletes trait on the Poem model
