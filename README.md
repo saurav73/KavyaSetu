@@ -50,6 +50,7 @@ one Unit); there are no app-specific tests yet. Tests run on PHPUnit 11.
 | `app/Http/Requests/` | PoemStoreRequest / PoemUpdateRequest input validation |
 | `app/Policies/PoemPolicy.php` | Author-only edit/delete ownership rules |
 | `app/Models/Poem.php` | Poem model — slugs, publishing, soft deletes |
-| `routes/web.php` | Public poem feed + guest/auth route groups |
+| `app/Models/User.php` | User model |
+| `routes/web.php` | Public poem feed + guest/auth route groups (17 `Route::` declarations) |
 | `AUTHENTICATION_GUIDE.md` | How authentication works in this app |
 | `CHANGELOG.md` | Dated history of what was built |
