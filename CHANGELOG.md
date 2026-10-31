@@ -1,6 +1,10 @@
 # KavyaSetu Changelog
 
 
+## 2026-10-31
+- README: structure table now lists app/Models/User.php and states routes/web.php holds 17 Route:: declarations, counted from the sources
+- Re-verified: PoemController still hides drafts from non-authors with a 404, and only the author can edit or delete
+
 ## 2026-10-30
 - README: feed bullets now note both lists use simple pagination (simplePaginate(12) public, simplePaginate(10) personal), so readers know there are no numbered page links
 - Re-verified: PoemController still hides drafts from non-authors with a 404, and only the author can edit or delete
