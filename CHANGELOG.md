@@ -1,6 +1,10 @@
 # KavyaSetu Changelog
 
 
+## 2026-11-01
+- README: structure table now lists the 2 migrations and the 11 Blade views by group, counted from the sources
+- Re-verified: routes/web.php still holds 17 Route:: declarations
+
 ## 2026-10-31
 - README: structure table now lists app/Models/User.php and states routes/web.php holds 17 Route:: declarations, counted from the sources
 - Re-verified: PoemController still hides drafts from non-authors with a 404, and only the author can edit or delete
