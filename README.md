@@ -53,4 +53,6 @@ one Unit); there are no app-specific tests yet. Tests run on PHPUnit 11.
 | `app/Models/User.php` | User model |
 | `routes/web.php` | Public poem feed + guest/auth route groups (17 `Route::` declarations) |
 | `AUTHENTICATION_GUIDE.md` | How authentication works in this app |
+| `database/migrations/` | 2 migrations: `create_users_table`, `create_poems_table` |
+| `resources/views/` | 11 Blade views: `auth/` (2), `layouts/` (1), `poems/` (7), `welcome.blade.php` (1) |
 | `CHANGELOG.md` | Dated history of what was built |
