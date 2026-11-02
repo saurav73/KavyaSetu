@@ -39,6 +39,8 @@ php artisan test
 
 The suite is currently only the Laravel scaffold `ExampleTest`s (one Feature,
 one Unit); there are no app-specific tests yet. Tests run on PHPUnit 11.
+The `tests/` tree holds those two `ExampleTest`s plus the shared `TestCase.php`
+base class, counted from `tests/`.
 
 ## Project structure
 
