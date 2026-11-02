@@ -1,6 +1,10 @@
 # KavyaSetu Changelog
 
 
+## 2026-11-02
+- README: Tests section now documents the tests/ tree (2 ExampleTests + the shared TestCase.php base class), counted from tests/
+- Re-verified: routes/web.php still holds 17 Route:: declarations, and the 2 migrations + 11 Blade views from the structure table are unchanged
+
 ## 2026-11-01
 - README: structure table now lists the 2 migrations and the 11 Blade views by group, counted from the sources
 - Re-verified: routes/web.php still holds 17 Route:: declarations
