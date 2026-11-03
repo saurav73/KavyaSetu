@@ -49,6 +49,7 @@ base class, counted from `tests/`.
 | `app/Http/Controllers/PoemController.php` | Poem CRUD, publishing, ownership checks |
 | `app/Http/Controllers/AuthController.php` | Register / login / logout |
 | `app/Http/Controllers/Controller.php` | Base controller composing Laravel helper traits |
+| `app/` | 9 PHP files in total: 3 controllers, 2 form requests, 2 models, 1 policy (`PoemPolicy`), and 1 provider (`AppServiceProvider`) — counted from `app/` |
 | `app/Http/Requests/` | PoemStoreRequest / PoemUpdateRequest input validation |
 | `app/Policies/PoemPolicy.php` | Author-only edit/delete ownership rules |
 | `app/Models/Poem.php` | Poem model — slugs, publishing, soft deletes |
