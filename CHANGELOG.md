@@ -1,6 +1,10 @@
 # KavyaSetu Changelog
 
 
+## 2026-11-03
+- README: structure table now states the app/ PHP total (9 files: 3 controllers, 2 form requests, 2 models, 1 policy, 1 provider), counted from app/
+- Re-verified: routes/web.php still holds 17 Route:: declarations, and the 2 migrations + 11 Blade views from the structure table are unchanged
+
 ## 2026-11-02
 - README: Tests section now documents the tests/ tree (2 ExampleTests + the shared TestCase.php base class), counted from tests/
 - Re-verified: routes/web.php still holds 17 Route:: declarations, and the 2 migrations + 11 Blade views from the structure table are unchanged
