@@ -57,5 +57,6 @@ base class, counted from `tests/`.
 | `routes/web.php` | Public poem feed + guest/auth route groups (17 `Route::` declarations) |
 | `AUTHENTICATION_GUIDE.md` | How authentication works in this app |
 | `database/migrations/` | 2 migrations: `create_users_table`, `create_poems_table` |
+| `config/` | 10 config files (`app`, `auth`, `cache`, `database`, `filesystems`, `logging`, `mail`, `queue`, `services`, `session`) — counted from `config/` |
 | `resources/views/` | 11 Blade views: `auth/` (2), `layouts/` (1), `poems/` (7), `welcome.blade.php` (1) |
 | `CHANGELOG.md` | Dated history of what was built |
