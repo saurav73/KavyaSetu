@@ -2,6 +2,10 @@
 
 
 
+## 2026-11-05
+- README: structure table now breaks down the routes (15 registrations: 9 GET, 4 POST, 1 PUT, 1 DELETE, inside 2 middleware groups, 13 named), counted from `routes/web.php`
+- Re-verified: routes/web.php still holds 17 Route:: declarations, and the 2 migrations + 11 Blade views from the structure table are unchanged
+
 ## 2026-11-04
 - README: structure table now lists the 10 `config/` files, counted from `config/`
 - Re-verified: routes/web.php still holds 17 Route:: declarations, and the 2 migrations + 11 Blade views from the structure table are unchanged
