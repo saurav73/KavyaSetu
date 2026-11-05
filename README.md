@@ -54,7 +54,7 @@ base class, counted from `tests/`.
 | `app/Policies/PoemPolicy.php` | Author-only edit/delete ownership rules |
 | `app/Models/Poem.php` | Poem model — slugs, publishing, soft deletes |
 | `app/Models/User.php` | User model |
-| `routes/web.php` | Public poem feed + guest/auth route groups (17 `Route::` declarations) |
+| `routes/web.php` | Public poem feed + guest/auth route groups (17 `Route::` declarations: 15 route registrations — 9 GET, 4 POST, 1 PUT, 1 DELETE — inside 2 middleware groups, 13 of them named) |
 | `AUTHENTICATION_GUIDE.md` | How authentication works in this app |
 | `database/migrations/` | 2 migrations: `create_users_table`, `create_poems_table` |
 | `config/` | 10 config files (`app`, `auth`, `cache`, `database`, `filesystems`, `logging`, `mail`, `queue`, `services`, `session`) — counted from `config/` |
