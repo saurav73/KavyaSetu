@@ -2,6 +2,10 @@
 
 
 
+## 2026-11-07
+- README: structure table now documents `database/factories/` + `database/seeders/` (scaffold `UserFactory` + `DatabaseSeeder` creating one test user; no poem factory or seeder yet), counted from `database/`
+- Re-verified: the public feed still paginates 12 per page and My poems 10 per page (`simplePaginate(12)` / `simplePaginate(10)` in `PoemController`), and slug regeneration on title change still holds in `Poem`
+
 ## 2026-11-06
 - README: structure table now lists the composer dependencies (3 runtime + 7 dev), counted from `composer.json`
 - Re-verified: routes/web.php still holds 17 Route:: declarations, and the 2 migrations + 11 Blade views from the structure table are unchanged
