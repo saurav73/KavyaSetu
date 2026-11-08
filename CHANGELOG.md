@@ -2,6 +2,10 @@
 
 
 
+## 2026-11-08
+- `AUTHENTICATION_GUIDE.md`: the logged-in routes table now includes `GET /my-poems` (the personal dashboard, 10 per page), which the guide previously omitted
+- Re-verified: `routes/web.php` still holds 17 `Route::` declarations with 13 named routes, the feed still uses `simplePaginate(12)` and My poems `simplePaginate(10)`, and the slug-regenerates-on-title-change rule still holds in `Poem::booted()`
+
 ## 2026-11-07
 - README: structure table now documents `database/factories/` + `database/seeders/` (scaffold `UserFactory` + `DatabaseSeeder` creating one test user; no poem factory or seeder yet), counted from `database/`
 - Re-verified: the public feed still paginates 12 per page and My poems 10 per page (`simplePaginate(12)` / `simplePaginate(10)` in `PoemController`), and slug regeneration on title change still holds in `Poem`
