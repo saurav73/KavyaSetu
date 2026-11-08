@@ -18,6 +18,7 @@ How user authentication works in the KavyaSetu poem sharing app.
 | Method | URL | Action |
 |---|---|---|
 | POST | `/logout` | Sign out |
+| GET | `/my-poems` | Personal dashboard of everything you've written (10 per page) |
 | GET | `/poems/create` | New poem form |
 | POST | `/poems` | Save a new poem as a draft (visible only to its author) |
 | GET | `/poems/{slug}/edit` | Edit form (author only) |
