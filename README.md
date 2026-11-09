@@ -60,5 +60,5 @@ base class, counted from `tests/`.
 | `database/factories/` + `database/seeders/` | Scaffold `UserFactory` + `DatabaseSeeder` only (the seeder creates one test user, `test@example.com`); no poem factory or seeder yet — counted from `database/` |
 | `config/` | 10 config files (`app`, `auth`, `cache`, `database`, `filesystems`, `logging`, `mail`, `queue`, `services`, `session`) — counted from `config/` |
 | `composer.json` | 3 runtime dependencies (`php`, `laravel/framework`, `laravel/tinker`) + 7 dev dependencies (`fakerphp/faker`, `laravel/pail`, `laravel/pint`, `laravel/sail`, `mockery/mockery`, `nunomaduro/collision`, `phpunit/phpunit`) — counted from `composer.json` |
-| `resources/views/` | 11 Blade views: `auth/` (2), `layouts/` (1), `poems/` (7), `welcome.blade.php` (1) |
+| `resources/views/` | 10 Blade views: `auth/` (2), `layouts/` (1), `poems/` (6), `welcome.blade.php` (1) |
 | `CHANGELOG.md` | Dated history of what was built |
