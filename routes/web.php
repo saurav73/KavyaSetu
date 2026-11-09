@@ -3,7 +3,9 @@
 /**
  * Web route map for KavyaSetu.
  *
- * Three groups, order matters:
+ * Four sections, order matters:
+ *  0. Two standalone home routes (`/` welcome page, `/home` redirect to
+ *     the feed) — registered first, outside any middleware group.
  *  1. Guest-only auth routes (`guest` middleware) — logged-in users are
  *     redirected away from /register and /login.
  *  2. Authenticated routes (`auth` middleware) — poem management and the
