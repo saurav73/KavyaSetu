@@ -2,6 +2,11 @@
 
 
 
+## 2026-11-09
+- Removed the dead `resources/views/poems/global.blade.php` — a leftover "Global Tasks" page from a task-manager scaffold that linked to `tasks.index` / `tasks.global` routes which do not exist, and which no route or view referenced; README view count corrected (11 -> 10 Blade views, `poems/` 7 -> 6)
+- `routes/web.php`: file header now names all four route sections in order, including the two standalone home routes (`/` welcome, `/home` redirect) it previously skipped over as "three groups"
+- Re-verified: `routes/web.php` still holds 17 `Route::` declarations with 13 named routes, the feed still uses `simplePaginate(12)` and My poems `simplePaginate(10)`, and the password minimum in the register validation is still 8 chars as the auth guide states
+
 ## 2026-11-08
 - `AUTHENTICATION_GUIDE.md`: the logged-in routes table now includes `GET /my-poems` (the personal dashboard, 10 per page), which the guide previously omitted
 - Re-verified: `routes/web.php` still holds 17 `Route::` declarations with 13 named routes, the feed still uses `simplePaginate(12)` and My poems `simplePaginate(10)`, and the slug-regenerates-on-title-change rule still holds in `Poem::booted()`
