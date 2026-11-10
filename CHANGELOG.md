@@ -2,6 +2,9 @@
 
 
 
+## 2026-11-10
+- Re-verified: `routes/web.php` still holds 17 `Route::` declarations with 13 named routes, the feed still uses `simplePaginate(12)` and My poems `simplePaginate(10)`, the register validation still requires a password minimum of 8 chars, the 10 Blade views and 9 `app/` PHP files are unchanged, and `composer.json` still pins Laravel 12 on PHP 8.2 as the README states
+
 ## 2026-11-09
 - Removed the dead `resources/views/poems/global.blade.php` — a leftover "Global Tasks" page from a task-manager scaffold that linked to `tasks.index` / `tasks.global` routes which do not exist, and which no route or view referenced; README view count corrected (11 -> 10 Blade views, `poems/` 7 -> 6)
 - `routes/web.php`: file header now names all four route sections in order, including the two standalone home routes (`/` welcome, `/home` redirect) it previously skipped over as "three groups"
