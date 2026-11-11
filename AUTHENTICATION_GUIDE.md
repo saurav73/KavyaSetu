@@ -4,6 +4,13 @@ How user authentication works in the KavyaSetu poem sharing app.
 
 ## Routes
 
+**Public** (no account needed — anyone can read):
+
+| Method | URL | Action |
+|---|---|---|
+| GET | `/poems` | Public poem feed (12 per page) |
+| GET | `/poems/{slug}` | Read a published poem |
+
 **Guest only** (`guest` middleware — logged-in users are redirected away):
 
 | Method | URL | Action |
