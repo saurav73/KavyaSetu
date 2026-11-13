@@ -2,6 +2,9 @@
 
 
 
+## 2026-11-13
+- Re-verified: `routes/web.php` still holds 17 `Route::` declarations (15 registrations: 9 GET, 4 POST, 1 PUT, 1 DELETE, inside 2 middleware groups) with 13 named routes, the feed still uses `simplePaginate(12)` and My poems `simplePaginate(10)`, the register validation still requires a password minimum of 8 chars, the 10 Blade views and 9 `app/` PHP files are unchanged, and `composer.json` still pins Laravel 12 on PHP 8.2 as the README states
+
 ## 2026-11-12
 - Re-verified: `routes/web.php` still holds 17 `Route::` declarations (15 registrations: 9 GET, 4 POST, 1 PUT, 1 DELETE, inside 2 middleware groups) with 13 named routes, the feed still uses `simplePaginate(12)` and My poems `simplePaginate(10)`, the register validation still requires a password minimum of 8 chars, the 10 Blade views and 9 `app/` PHP files are unchanged, the remember-me login option still works (`Auth::attempt` with the `remember` flag), the `Poem` model still uses soft deletes and regenerates slugs on title change, and `composer.json` still pins Laravel 12 on PHP 8.2 as the README states
 
