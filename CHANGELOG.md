@@ -1,5 +1,11 @@
 # KavyaSetu Changelog
 
+## 2026-11-17
+- Fixed a Todo-template leftover: `package.json` had no `name` field and `package-lock.json` still said `Todolist` — both now say `kavyasetu`, matching the composer package `saurav73/kavyasetu`
+- Fixed a misleading step in `AUTHENTICATION_GUIDE.md`: new poems save as drafts and the create form has no Publish checkbox, so publishing only happens via the edit form — the try-it-locally steps now say that instead of implying a new poem lands on the public feed
+- Re-verified: `routes/web.php` still holds 17 `Route::` declarations (15 registrations: 9 GET, 4 POST, 1 PUT, 1 DELETE, inside 2 middleware groups) with 13 named routes, the feed still uses `simplePaginate(12)` and My poems `simplePaginate(10)`, the register validation still requires a password minimum of 8 chars, the 10 Blade views and 9 `app/` PHP files are unchanged, and `composer.json` still pins Laravel 12 on PHP 8.2 as the README states
+
+
 ## 2026-11-16
 - Re-verified: `routes/web.php` still holds 17 `Route::` declarations (15 registrations: 9 GET, 4 POST, 1 PUT, 1 DELETE, inside 2 middleware groups) with 13 named routes, the feed still uses `simplePaginate(12)` and My poems `simplePaginate(10)`, the register validation still requires a password minimum of 8 chars, the 10 Blade views and 9 `app/` PHP files are unchanged, and `composer.json` still pins Laravel 12 on PHP 8.2 as the README states
 
