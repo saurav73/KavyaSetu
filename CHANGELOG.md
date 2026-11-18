@@ -1,5 +1,10 @@
 # KavyaSetu Changelog
 
+## 2026-11-18
+- Added the missing `sessions`, `cache`/`cache_locks`, `jobs`, `job_batches`, and `failed_jobs` tables migration: `.env.example` defaults to database session, cache, and queue drivers, but the only migrations created `users` and `poems`, so a fresh `php artisan migrate` left login broken (no `sessions` table) and the dev queue listener broken (no `jobs` table)
+- Replaced the fabricated welcome-page stats ("1,240+ poems shared", "3,800+ verses read today") with honest feature highlights: publishing, private drafts, and browsing the public feed
+- README now documents the `composer run setup` one-command shortcut (install, key, migrate, frontend build) and notes that `migrate` creates the sessions, cache, and jobs tables
+
 ## 2026-11-17
 - Fixed a Todo-template leftover: `package.json` had no `name` field and `package-lock.json` still said `Todolist` — both now say `kavyasetu`, matching the composer package `saurav73/kavyasetu`
 - Fixed a misleading step in `AUTHENTICATION_GUIDE.md`: new poems save as drafts and the create form has no Publish checkbox, so publishing only happens via the edit form — the try-it-locally steps now say that instead of implying a new poem lands on the public feed
