@@ -25,9 +25,12 @@ php artisan key:generate
 # The default .env points at MySQL — create the `kavyasetu` database first
 # (skip this step if you switch DB_CONNECTION to sqlite):
 #   mysql -u root -p -e "CREATE DATABASE kavyasetu;"
-php artisan migrate
+php artisan migrate   # creates users, poems, plus the sessions, cache, and jobs tables
 composer run dev        # or: php artisan serve
 ```
+
+Shortcut: `composer run setup` does the install, key generation, migrate,
+and frontend build in one go (still create the MySQL database first).
 
 Open `http://127.0.0.1:8000`, register an account, and publish your first poem.
 
