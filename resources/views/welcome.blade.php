@@ -36,20 +36,20 @@
         </div>
     </div>
 
-    <!-- Quick stats or teaser -->
+    <!-- What you can do here -->
     <div class="py-16 bg-white">
         <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
             <div>
-                <div class="text-4xl font-bold text-indigo-600 mb-2">1,240+</div>
-                <p class="text-gray-600">Poems Shared</p>
+                <div class="text-2xl font-bold text-indigo-600 mb-2">Publish your poems</div>
+                <p class="text-gray-600">Share original work with the world, one verse at a time.</p>
             </div>
             <div>
-                <div class="text-4xl font-bold text-indigo-600 mb-2">3,800+</div>
-                <p class="text-gray-600">Verses Read Today</p>
+                <div class="text-2xl font-bold text-indigo-600 mb-2">Drafts stay private</div>
+                <p class="text-gray-600">Unfinished poems are visible only to you until you publish them.</p>
             </div>
             <div>
-                <div class="text-4xl font-bold text-indigo-600 mb-2">Worldwide</div>
-                <p class="text-gray-600">Poets & Readers</p>
+                <div class="text-2xl font-bold text-indigo-600 mb-2">Discover new voices</div>
+                <p class="text-gray-600">Browse the public feed and read what other poets are writing.</p>
             </div>
         </div>
     </div>
