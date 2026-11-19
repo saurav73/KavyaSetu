@@ -59,7 +59,7 @@ base class, counted from `tests/`.
 | `app/Models/User.php` | User model |
 | `routes/web.php` | Public poem feed + guest/auth route groups (17 `Route::` declarations: 15 route registrations — 9 GET, 4 POST, 1 PUT, 1 DELETE — inside 2 middleware groups, 13 of them named) |
 | `AUTHENTICATION_GUIDE.md` | How authentication works in this app |
-| `database/migrations/` | 2 migrations: `create_users_table`, `create_poems_table` |
+| `database/migrations/` | 3 migrations: `create_users_table`, `create_poems_table`, `create_sessions_cache_and_jobs_tables` |
 | `database/factories/` + `database/seeders/` | Scaffold `UserFactory` + `DatabaseSeeder` only (the seeder creates one test user, `test@example.com`); no poem factory or seeder yet — counted from `database/` |
 | `config/` | 10 config files (`app`, `auth`, `cache`, `database`, `filesystems`, `logging`, `mail`, `queue`, `services`, `session`) — counted from `config/` |
 | `composer.json` | 3 runtime dependencies (`php`, `laravel/framework`, `laravel/tinker`) + 7 dev dependencies (`fakerphp/faker`, `laravel/pail`, `laravel/pint`, `laravel/sail`, `mockery/mockery`, `nunomaduro/collision`, `phpunit/phpunit`) — counted from `composer.json` |
