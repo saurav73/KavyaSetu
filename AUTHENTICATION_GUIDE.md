@@ -8,6 +8,8 @@ How user authentication works in the KavyaSetu poem sharing app.
 
 | Method | URL | Action |
 |---|---|---|
+| GET | `/` | Welcome page |
+| GET | `/home` | Redirects to the public poem feed |
 | GET | `/poems` | Public poem feed (12 per page) |
 | GET | `/poems/{slug}` | Read a published poem |
 
