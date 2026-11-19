@@ -1,5 +1,10 @@
 # KavyaSetu Changelog
 
+## 2026-11-19
+- README: the structure table now lists all 3 migrations, including yesterday's `create_sessions_cache_and_jobs_tables` — it still said 2
+- `AUTHENTICATION_GUIDE.md`: the route table now lists the two standalone home routes from `routes/web.php` — `GET /` (welcome page) and `GET /home` (redirect to the feed) — which it previously omitted
+- Re-verified: `routes/web.php` still holds 17 `Route::` declarations (15 registrations: 9 GET, 4 POST, 1 PUT, 1 DELETE, inside 2 middleware groups) with 13 named routes, the feed still uses `simplePaginate(12)` and My poems `simplePaginate(10)`, the 10 Blade views and 9 `app/` PHP files are unchanged, and `composer.json` still pins Laravel 12 on PHP 8.2 as the README states
+
 ## 2026-11-18
 - Added the missing `sessions`, `cache`/`cache_locks`, `jobs`, `job_batches`, and `failed_jobs` tables migration: `.env.example` defaults to database session, cache, and queue drivers, but the only migrations created `users` and `poems`, so a fresh `php artisan migrate` left login broken (no `sessions` table) and the dev queue listener broken (no `jobs` table)
 - Replaced the fabricated welcome-page stats ("1,240+ poems shared", "3,800+ verses read today") with honest feature highlights: publishing, private drafts, and browsing the public feed
