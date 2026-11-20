@@ -57,7 +57,7 @@ base class, counted from `tests/`.
 | `app/Policies/PoemPolicy.php` | Author-only edit/delete ownership rules |
 | `app/Models/Poem.php` | Poem model — slugs, publishing, soft deletes |
 | `app/Models/User.php` | User model |
-| `routes/web.php` | Public poem feed + guest/auth route groups (17 `Route::` declarations: 15 route registrations — 9 GET, 4 POST, 1 PUT, 1 DELETE — inside 2 middleware groups, 13 of them named) |
+| `routes/web.php` | Public poem feed + guest/auth route groups (17 `Route::` declarations: 15 route registrations — 9 GET, 4 POST, 1 PUT, 1 DELETE — inside 2 middleware groups, 13 of them named; re-verified 2026-11-20) |
 | `AUTHENTICATION_GUIDE.md` | How authentication works in this app |
 | `database/migrations/` | 3 migrations: `create_users_table`, `create_poems_table`, `create_sessions_cache_and_jobs_tables` |
 | `database/factories/` + `database/seeders/` | Scaffold `UserFactory` + `DatabaseSeeder` only (the seeder creates one test user, `test@example.com`); no poem factory or seeder yet — counted from `database/` |
