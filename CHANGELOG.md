@@ -1,5 +1,10 @@
 # KavyaSetu Changelog
 
+## 2026-11-20
+- README: the structure table now records the routes row as re-verified 2026-11-20
+- Re-verified: `routes/web.php` still holds 17 `Route::` declarations (15 registrations: 9 GET, 4 POST, 1 PUT, 1 DELETE, inside 2 middleware groups) with 13 named routes, the feed still uses `simplePaginate(12)` and My poems `simplePaginate(10)`, the 10 Blade views and 9 `app/` PHP files are unchanged, the 3 migrations and 10 config files still match the README, and `composer.json` still pins Laravel 12 on PHP 8.2 with PHPUnit 11 as the README states
+- Re-verified `AUTHENTICATION_GUIDE.md` against the code: the route tables list all 15 registrations, `GET /home` really does redirect to the feed (`redirect()->route('poems.index')`), unpublished drafts still 404 for everyone except the author, registration still requires `min:8` passwords, login still regenerates the session ID, logout still invalidates the session and regenerates the CSRF token, and the login form still carries the remember-me checkbox
+
 ## 2026-11-19
 - README: the structure table now lists all 3 migrations, including yesterday's `create_sessions_cache_and_jobs_tables` — it still said 2
 - `AUTHENTICATION_GUIDE.md`: the route table now lists the two standalone home routes from `routes/web.php` — `GET /` (welcome page) and `GET /home` (redirect to the feed) — which it previously omitted
